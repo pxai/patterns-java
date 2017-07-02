@@ -1,6 +1,3 @@
-/**
- * 
- */
 package io.pello.patterns.behavioral.state;
 
 /**
@@ -9,10 +6,6 @@ package io.pello.patterns.behavioral.state;
  * @greetz any
  */
 public class StateClient {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		Dragon smaug = new Dragon();
 		smaug.land();
@@ -20,5 +13,4 @@ public class StateClient {
 		smaug.attack();
 		smaug.land();
 	}
-
 }

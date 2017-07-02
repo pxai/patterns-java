@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.behavioral.state;
 
 /**
@@ -14,32 +12,22 @@ public class Dragon {
 	public Dragon () {
 		this.dragonState = new DragonLandState();
 	}
-	
-	/**
-	 * make the dragon fly
-	 */
+
 	public void fly() {
 		dragonState = new DragonFlyState();
 		System.out.println("Dragon> let's fly");
 		dragonState.fly(this);
 	}
 
-	/**
-	 * make the dragon fly
-	 */
 	public void land() {
 		dragonState = new DragonLandState();
 		System.out.println("Dragon> let's land");
 		dragonState.land(this);
 	}
 
-	/**
-	 * make the dragon attack!!!
-	 */
 	public int attack() {
 		dragonState = new DragonAttackState();
 		System.out.println("Dragon> attack of the dragon");
 		return dragonState.attack(this);
 	}
-
 }
