@@ -16,5 +16,4 @@ public class JsonLogger extends Logger {
 		// Do JSONparsing stuff...
 		System.out.println(logMessage.getMsg());
 	}
-
 }

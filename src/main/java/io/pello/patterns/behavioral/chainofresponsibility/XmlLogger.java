@@ -16,5 +16,4 @@ public class XmlLogger extends Logger {
 		// Do parsing stuff...
 		System.out.println(logMessage.getMsg());
 	}
-
 }

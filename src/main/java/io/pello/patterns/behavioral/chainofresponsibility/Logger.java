@@ -9,17 +9,12 @@ public abstract class Logger {
 	protected Logger nextLogger;
 	protected int myLogType;
 	
-	/**
-	 * constructor
-	 * @param myLogType
-	 */
 	public Logger (int myLogType) {
 		this.myLogType = myLogType;
 	}
 	
 	/**
 	 * stablish next logger in chain
-	 * @param logger
 	 */
 	public Logger setNext (Logger logger) {
 		nextLogger = logger;
@@ -29,7 +24,6 @@ public abstract class Logger {
 	/**
 	 * This is called to perform log, if this class
 	 * is not able, passes this task to the next in chain
-	 * @param logMessage
 	 */
 	public void log (LogMessage logMessage) {
 		if (myLogType == logMessage.getType()) {
@@ -38,7 +32,6 @@ public abstract class Logger {
 			nextLogger.log(logMessage);
 		}
 	}
-	
-	
+		
 	protected abstract void logMessage (LogMessage logMessage);
 }
