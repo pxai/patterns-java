@@ -1,6 +1,3 @@
-/**
- * sample patterns
- */
 package io.pello.patterns.structural.decorator;
 
 /**
