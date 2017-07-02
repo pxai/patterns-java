@@ -36,5 +36,4 @@ public class State {
 	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
 	}
-
 }
