@@ -1,9 +1,7 @@
-/**
- * 
- */
+
 package io.pello.patterns.structural.adapter;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * This class represents some kind of Inventory
@@ -12,20 +10,13 @@ import java.util.Vector;
  * @author Pello Xabier Altadill Izura
  *
  */
-public class Equipment extends Vector {
+public class Equipment extends ArrayList {
 	
-	/**
-	 * adds element t
-	 */
 	public void addElement (Object object) {
 		this.add(object);
 	} 
 	
-	/**
-	 * removes element from given position
-	 * @param index
-	 */
 	public void delete (int index) {
-		this.removeElementAt(index);
+		this.remove(index);
 	}
 }

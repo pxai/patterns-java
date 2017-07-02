@@ -1,6 +1,3 @@
-/**
- * 
- */
 package io.pello.patterns.structural.adapter;
 
 /**
