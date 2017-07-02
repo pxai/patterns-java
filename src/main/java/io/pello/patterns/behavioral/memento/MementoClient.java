@@ -1,7 +1,6 @@
 package io.pello.patterns.behavioral.memento;
 
 import io.pello.patterns.creational.abstractfactory.HumanWeapon;
-import io.pello.patterns.creational.abstractfactory.Weapon;
 
 /**
  * Client to test memento pattern sample

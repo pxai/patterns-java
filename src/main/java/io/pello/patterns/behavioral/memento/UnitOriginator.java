@@ -14,13 +14,6 @@ public class UnitOriginator {
 	private HumanWeapon weapon;
 	private State state;
 	
-	/**
-	 * Constructor
-	 * @param name
-	 * @param life
-	 * @param range
-	 * @param weapon
-	 */
 	public UnitOriginator(String name, int life, String range, HumanWeapon weapon) {
 		this.name = name;
 		this.life = life;
@@ -28,10 +21,7 @@ public class UnitOriginator {
 		this.weapon = weapon;
 	}
 
-	/**
-	 * sets memento
-	 * @param unitMemento
-	 */
+
 	public void setUnitMemento (UnitMemento unitMemento) {
 		this.state = unitMemento.getState();
 	}
@@ -49,64 +39,43 @@ public class UnitOriginator {
 		return memento;
 	}
 	
-	/**
-	 * @return the name
-	 */
+	// getters/setters...
+
 	public String getName() {
 		return name;
 	}
-	/**
-	 * @param name the name to set
-	 */
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	/**
-	 * @return the life
-	 */
+
 	public int getLife() {
 		return life;
 	}
-	/**
-	 * @param life the life to set
-	 */
+
 	public void setLife(int life) {
 		this.life = life;
 	}
-	/**
-	 * @return the range
-	 */
+
 	public String getRange() {
 		return range;
 	}
 
-	/**
-	 * @param range the range to set
-	 */
 	public void setRange(String range) {
 		this.range = range;
 	}
 
-	/**
-	 * @return the weapon
-	 */
 	public HumanWeapon getWeapon() {
 		return weapon;
 	}
-	/**
-	 * @param weapon the weapon to set
-	 */
+
 	public void setWeapon(HumanWeapon weapon) {
 		this.weapon = weapon;
 	}
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
+
 	@Override
 	public String toString() {
 		return "UnitOriginator [name=" + name + ", life=" + life + ", weapon="
 				+ weapon + "]";
 	}
-	
-	
 }

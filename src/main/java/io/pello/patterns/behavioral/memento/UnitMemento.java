@@ -1,7 +1,5 @@
 package io.pello.patterns.behavioral.memento;
 
-
-
 /**
  * Keeps an object state
  * @author Pello Xabier Altadill Izura
@@ -10,20 +8,11 @@ package io.pello.patterns.behavioral.memento;
 public class UnitMemento {
 	private State state;
 	
-	/**
-	 * saves the state
-	 * @param state
-	 */
 	public void saveState(State state) {
 		this.state = state;
 	}
 	
-	/**
-	 * returns current state
-	 * @return
-	 */
 	public State getState () {
 		return state;
 	}
-	
 }

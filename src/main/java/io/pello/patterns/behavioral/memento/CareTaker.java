@@ -8,18 +8,11 @@ package io.pello.patterns.behavioral.memento;
 public class CareTaker {
 	private UnitMemento memento;
 
-	/**
-	 * @return the memento
-	 */
 	public UnitMemento getMemento() {
 		return memento;
 	}
 
-	/**
-	 * @param memento the memento to set
-	 */
 	public void setMemento(UnitMemento memento) {
 		this.memento = memento;
 	}
-	
 }
