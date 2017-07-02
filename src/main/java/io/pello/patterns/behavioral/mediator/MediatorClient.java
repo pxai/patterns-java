@@ -10,7 +10,7 @@ import java.util.Vector;
  */
 public class MediatorClient {
 	public static void main (String args[]) {
-		MediatorInterface mediator = new MediatorImpl();
+		Mediator mediator = new MediatorImpl();
 		Vector<Unit> army = new Vector<Unit>();
 		
  		army.add(new Soldier("u1","soldier",mediator));
@@ -20,6 +20,5 @@ public class MediatorClient {
  		Unit general = new General("General", "general", mediator);
  		
  		general.attack();
-
 	}
 }

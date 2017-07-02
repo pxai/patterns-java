@@ -8,25 +8,16 @@ package io.pello.patterns.behavioral.mediator;
 public class Command {
 	private String msg;
 
-	/**
-	 * @param msg
-	 */
 	public Command(String msg) {
 		this.msg = msg;
 	}
+	// getters/setters ...
 
-	/**
-	 * @return the msg
-	 */
 	public String getMsg() {
 		return msg;
 	}
 
-	/**
-	 * @param msg the msg to set
-	 */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
-	
 }

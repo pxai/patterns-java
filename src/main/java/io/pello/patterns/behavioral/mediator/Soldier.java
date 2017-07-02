@@ -6,20 +6,11 @@ package io.pello.patterns.behavioral.mediator;
  * @greetz any
  */
 public class Soldier extends Unit {
-	
-	/**
-	 * Constructor
-	 * @param name
-	 * @param range
-	 */
-	public Soldier(String name, String range, MediatorInterface mediator) {
+
+	public Soldier(String name, String range, Mediator mediator) {
 		super(name, range, mediator);
 	}
 
-	/**
-	 * Unit receives an order...
-	 * @param msg
-	 */
 	@Override
 	public void receiveOrder (Command command) {
 		System.out.println("Order received> " + command.getMsg());

@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.behavioral.mediator;
 
 /**
@@ -8,7 +6,7 @@ package io.pello.patterns.behavioral.mediator;
  * @author Pello Xabier Altadill Izura
  * @greetz any
  */
-public interface MediatorInterface {
+public interface Mediator {
 	public void order (Command command, Unit unit);
 	public void move (int x, int y);
 	public int attack (int x, int y);
