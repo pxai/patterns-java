@@ -3,19 +3,15 @@
  */
 package io.pello.patterns.creational.prototype;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * Makes use of prototype creational pattern
  * @author Pello Xabier Altadill Izura
- *
  */
 public class PrototypeClient {
-	/**
-	 * method to create some prototypes
-	 */
 	public void createPrototypes () {
-		Vector<BeastPrototype> beasts = new Vector<BeastPrototype>();
+		ArrayList<BeastPrototype> beasts = new ArrayList<BeastPrototype>();
 		BeastPrototypeFactory beastFactory =
 				new BeastPrototypeFactory();
 

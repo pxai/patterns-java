@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.creational.prototype;
 
 /**
@@ -14,35 +12,20 @@ public class BeastPrototypeFactory {
 	private Sheep sheep;
 	private Seal seal;
 	
-	/**
-	 * Constructor
-	 */
 	public BeastPrototypeFactory () {
 		boar = new Boar();
 		seal = new Seal();
 		sheep = new Sheep();
 	}
 	
-	/**
-	 * clones a boar
-	 * @return
-	 */
 	public Boar createBoar () {
 		return boar.clone();
 	}
 	
-	/**
-	 * clones a sheep
-	 * @return
-	 */
 	public Sheep createSheep () {
 		return sheep.clone();
 	}
 	
-	/**
-	 * clones a seal
-	 * @return
-	 */
 	public Seal createSeal () {
 		return seal.clone();
 	}
