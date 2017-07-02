@@ -1,23 +1,16 @@
-/**
- * 
- */
+
 package io.pello.patterns.creational.factory;
 
+import java.util.ArrayList;
 import java.util.Random;
-import java.util.Vector;
 
-/**
- * @author Administrator
- *
- */
 public class FactoryClient {
 	private static final int TOTAL_TREASURES = 10;
-
 	
 	public void createTreasures () {
 		TreasureFactory treasureFactory = new TreasureFactory();
 		Random random = new Random();
-		Vector<Treasure> treasures = new Vector<Treasure>();
+		ArrayList<Treasure> treasures = new ArrayList<Treasure>();
 		
 		for (int i = 0; i< TOTAL_TREASURES;i++) {
 			treasures.add(treasureFactory.createTreasure(random.nextInt(3)));

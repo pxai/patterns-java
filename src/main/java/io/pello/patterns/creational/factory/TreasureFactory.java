@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.creational.factory;
 
 /**
@@ -15,11 +13,6 @@ public class TreasureFactory {
 	private static final int JEWEL = 1;
 	private static final int GOLDCOIN = 2;
 
-	/**
-	 * this factory method creates treasure
-	 * @param type
-	 * @return
-	 */
 	public Treasure createTreasure(int type) {
 		switch (type) {
 			case DIAMOND :	return new Diamond();
