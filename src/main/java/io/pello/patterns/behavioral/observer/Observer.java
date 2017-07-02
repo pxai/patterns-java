@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.behavioral.observer;
 
 /**
@@ -15,24 +13,16 @@ public abstract class Observer {
 	// This method will update view
 	public abstract void update ();
 
-	/**
-	 * constructor passing subject
-	 * @param subject
-	 */
 	public Observer (Subject subject) {
 		this.subject = subject;
 	}
 	
-	/**
-	 * @return the observerState
-	 */
+	// getters/setters...
+
 	public String getObserverState() {
 		return observerState;
 	}
 
-	/**
-	 * @param observerState the observerState to set
-	 */
 	public void setObserverState(String observerState) {
 		this.observerState = observerState;
 	}

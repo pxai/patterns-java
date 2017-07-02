@@ -1,6 +1,3 @@
-/**
- * 
- */
 package io.pello.patterns.behavioral.observer;
 
 /**
@@ -10,19 +7,11 @@ package io.pello.patterns.behavioral.observer;
  */
 public class TextObserver extends Observer {
 
-	/**
-	 * constructor passing subject
-	 * @param subject
-	 */
 	public TextObserver(Subject subject) {
 		super(subject);
 	}
 
-	/* (non-Javadoc)
-	 * @see io.pello.patterns.behavioral.observer.Observer#update()
-	 */
 	public void update() {
 		observerState = subject.getState();
 	}
-
 }

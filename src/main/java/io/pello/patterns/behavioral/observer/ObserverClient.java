@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.behavioral.observer;
 
 /**
@@ -10,9 +8,6 @@ package io.pello.patterns.behavioral.observer;
  */
 public class ObserverClient {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		PlayerSubject player = new PlayerSubject();
 		Observer stringObserver = new TextObserver(player);
@@ -23,16 +18,13 @@ public class ObserverClient {
 		player.attach(xmlObserver);
 		player.attach(jsonObserver);
 
-		System.out.println("Before change: " + stringObserver.getObserverState());
+		System.out.println("Before change: " + stringObserver.getObserverState());	
 		
 		player.setState("Player data changed");
-
 		System.out.println("After change: " + stringObserver.getObserverState());
 		
 		xmlObserver.setObserverState("Changed from xml observer");
-
 		System.out.println("After 2nd change: " + stringObserver.getObserverState());
 
 	}
-
 }

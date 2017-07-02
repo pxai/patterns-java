@@ -1,9 +1,6 @@
-/**
- * 
- */
 package io.pello.patterns.behavioral.observer;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * Definition of generic Subject in observer pattern
@@ -11,33 +8,23 @@ import java.util.Vector;
  * @greetz any
  */
 public abstract class Subject {
-	private Vector<Observer> observers;
+	private ArrayList<Observer> observers;
 	
 	public abstract String getState();
 	
-	/**
-	 * adds an observer to vector
-	 * @param observer
-	 */
+	 // adds an observer to list
 	public void attach (Observer observer) {
 		observers.add(observer);
 	}
 
-	/**
-	 * removes an observer from vector
-	 * @param observer
-	 */
+	// removes observer from list
 	public void dettach (Observer observer) {
 		observers.remove(observer);
 	}
 
-	/**
-	 * notifies observes about changes 
-	 */
 	public void notifyObservers () {
 		for (Observer observer : observers) {
 			observer.update();
 		}
 	}
-
 }

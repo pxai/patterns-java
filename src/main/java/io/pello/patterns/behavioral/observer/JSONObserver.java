@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.behavioral.observer;
 
 /**
@@ -10,19 +8,12 @@ package io.pello.patterns.behavioral.observer;
  */
 public class JSONObserver extends Observer {
 
-	/**
-	 * constructor passing subject
-	 * @param subject
-	 */
 	public JSONObserver(Subject subject) {
 		super(subject);
 	}
 
-	/* (non-Javadoc)
-	 * @see io.pello.patterns.behavioral.observer.Observer#update()
-	 */
 	public void update() {
-		observerState = "{\"data\" :\""+ subject.getState() + "\" }";
+		observerState = "{\"data\" :\""
+				+ subject.getState() + "\" }";
 	}
-
 }
