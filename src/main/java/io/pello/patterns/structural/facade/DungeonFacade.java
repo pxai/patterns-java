@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package io.pello.patterns.structural.facade;
 
 import io.pello.patterns.structural.decorator.Character;
@@ -9,7 +7,7 @@ import io.pello.patterns.structural.decorator.SimpleCharacter;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * A facade to hide all the complexity of Dungeon generation
@@ -18,22 +16,17 @@ import java.util.Vector;
  *
  */
 public class DungeonFacade {
-	private Vector<Treasure> treasures;
+	private ArrayList<Treasure> treasures;
 	private Hashtable<String, Character> characters;
-	private Vector<Trap> traps;
+	private ArrayList<Trap> traps;
 	
-	/**
-	 * constructor, inits structures
-	 */
 	public DungeonFacade () {
-		treasures = new Vector<Treasure>();
+		treasures = new ArrayList<Treasure>();
 		characters = new Hashtable<String,Character>();
-		traps = new Vector<Trap>();
+		traps = new ArrayList<Trap>();
 	}
 	
-	/**
-	 * generates a complex Dungeon
-	 */
+
 	public void generate() {
 		int total = (int)(Math.random() * 5);
 		
@@ -55,10 +48,6 @@ public class DungeonFacade {
 
 	}
 
-	/**
-	 * gives a report about Dungeon
-	 * @return
-	 */
 	public String getProperties() {
 		String report = "";
 		report = "Dungeon properties";
@@ -79,5 +68,4 @@ public class DungeonFacade {
 		}
 		return report;
 	}
-
 }
