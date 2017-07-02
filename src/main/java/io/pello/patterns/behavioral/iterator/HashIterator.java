@@ -14,10 +14,6 @@ public class HashIterator<S,T> implements Iterator<T> {
 	Enumeration keys;
 	Object current;
 	
-	/**
-	 * Constructor
-	 * @param items
-	 */
 	public HashIterator (Hashtable<S,T> items) {
 		this.items = items;
 		keys = items.keys();

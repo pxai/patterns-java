@@ -6,9 +6,6 @@ import java.util.Hashtable;
 public class HashtableStructure<S,T> implements Aggregation<T> {
 	private Hashtable<S,T> hashtable;
 	
-	/**
-	 * constructor
-	 */
 	public HashtableStructure () {
 		hashtable = new Hashtable<S,T>();
 	}

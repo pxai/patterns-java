@@ -1,7 +1,5 @@
 package io.pello.patterns.behavioral.iterator;
 
-import java.util.Hashtable;
-
 import io.pello.patterns.structural.composite.Squad;
 
 /**
