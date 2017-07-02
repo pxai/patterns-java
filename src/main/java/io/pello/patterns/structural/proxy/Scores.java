@@ -6,7 +6,6 @@ package io.pello.patterns.structural.proxy;
 * @greetz any
 */
 public interface Scores {
-	
 	public String show();
 	public boolean save(String scores);
 	public boolean eraseAll();

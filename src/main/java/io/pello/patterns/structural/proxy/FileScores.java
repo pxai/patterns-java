@@ -3,18 +3,17 @@ package io.pello.patterns.structural.proxy;
 public class FileScores implements Scores {
 
 	public String show() {
-		// TODO Auto-generated method stub
+		// ... stuff
 		return null;
 	}
 
 	public boolean save(String scores) {
-		// TODO Auto-generated method stub
+		// ... stuff
 		return false;
 	}
 
 	public boolean eraseAll() {
-		// TODO Auto-generated method stub
+		// ... stuff
 		return false;
 	}
-
 }
