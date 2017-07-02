@@ -8,41 +8,26 @@ package io.pello.patterns.behavioral.command;
 public class Army {
 	private int totalLife = 10;
 	
-	/**
-	 * moves army somewhere
-	 */
 	public void move () {
 		System.out.println("Army on the move");
 	}
 	
-	/**
-	 * army attacks
-	 */
 	public int attack () {
 		System.out.println("Army attacking");
 		return (int)Math.random() * 6;
 	}
 
-	/**
-	 * army attacks
-	 */
 	public int defend () {
 		System.out.println("Army defending");
 		return (int)Math.random() * 6;
 	}
 
-	/**
-	 * @return the totalLife
-	 */
+	// getters/setters...
 	public int getTotalLife() {
 		return totalLife;
 	}
 
-	/**
-	 * @param totalLife the totalLife to set
-	 */
 	public void setTotalLife(int totalLife) {
 		this.totalLife = totalLife;
 	}
-
 }

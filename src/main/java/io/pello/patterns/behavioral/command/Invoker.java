@@ -1,6 +1,6 @@
 package io.pello.patterns.behavioral.command;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * Invoker, invoke every command storing them in a structure
@@ -10,14 +10,13 @@ import java.util.Vector;
  * @greetz any
  */
 public class Invoker {
-	private Vector<Command> commandHistory = new Vector<Command>();
+	private ArrayList<Command> commandHistory = new ArrayList<Command>();
 	private int undoIndex = 0;
 	
 	/**
 	 * stores new command in commandHistory and executes it
 	 * When a new command is executed, undoIndex will point to the
 	 * last command.
-	 * @param command
 	 */
 	public void storeAndExecute (Command command) {
 		commandHistory.add(command);
@@ -25,9 +24,6 @@ public class Invoker {
 		command.execute();
 	}
 	
-	/**
-	 * undos last command
-	 */
 	public void undo () {
 		if (undoIndex >= 0 && undoIndex <= commandHistory.size() -1 ) {
 			commandHistory.get(undoIndex).undo();

@@ -9,27 +9,16 @@ public class MoveCommand implements Command {
 
 	private Army army;
 	
-	/**
-	 * constructor
-	 * @param army
-	 */
 	public MoveCommand(Army army) {
 		this.army = army;
 	}
 	
-	/**
-	 * implementation of execution command
-	 */
 	public void execute() {
 		System.out.println("MoveCommand: moving");
 		army.move();
 	}
-	
-	/**
-	 * implementation of the undo command
-	 */
+
 	public void undo() {
 		System.out.println("MoveCommand: undo moving");
 	}
-
 }
