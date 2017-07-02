@@ -6,7 +6,6 @@ package io.pello.patterns.structural.bridge;
  * @greetz any
  */
 public class BalancedAssignation implements Assignation {
-
 	/**
 	 * generate values in a compensated manner
 	 */
@@ -19,5 +18,4 @@ public class BalancedAssignation implements Assignation {
 		
 		return values;
 	}
-
 }

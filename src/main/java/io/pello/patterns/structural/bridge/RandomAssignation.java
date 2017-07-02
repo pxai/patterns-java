@@ -6,7 +6,6 @@ package io.pello.patterns.structural.bridge;
  * @greetz any
  */
 public class RandomAssignation implements Assignation {
-
 	/**
 	 * implements generateValues using random values
 	 */

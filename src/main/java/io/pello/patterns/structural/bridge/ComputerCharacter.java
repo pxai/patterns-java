@@ -8,11 +8,6 @@ package io.pello.patterns.structural.bridge;
 public class ComputerCharacter extends Character {
 	private String tribe;
 	
-	/**
-	 * Constructor
-	 * @param asignationMethod
-	 * @param name
-	 */
 	protected ComputerCharacter(Assignation assignationMethod, String tribe) {
 		super(assignationMethod);
 		this.tribe = tribe;
@@ -30,18 +25,11 @@ public class ComputerCharacter extends Character {
 		setIntelligence(values[2] + 1);
 	}
 
-	/**
-	 * @return the tribe
-	 */
 	public String getTribe() {
 		return tribe;
 	}
 
-	/**
-	 * @param tribe the tribe to set
-	 */
 	public void setTribe(String tribe) {
 		this.tribe = tribe;
 	}
-
 }

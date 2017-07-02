@@ -8,19 +8,11 @@ package io.pello.patterns.structural.bridge;
 public class PlayerCharacter extends Character {
 	private String name;
 	
-	/**
-	 * Constructor
-	 * @param asignationMethod
-	 * @param name
-	 */
 	protected PlayerCharacter(Assignation assignationMethod, String name) {
 		super(assignationMethod);
 		this.name = name;
 	}
 
-	/**
-	 * generate and assign character attributes.
-	 */
 	@Override
 	public void generateCharacter() {
 		int[] values = assignationMethod.generateValues();
@@ -29,18 +21,11 @@ public class PlayerCharacter extends Character {
 		setIntelligence(values[2]);
 	}
 
-	/**
-	 * @return the name
-	 */
 	public String getName() {
 		return name;
 	}
 
-	/**
-	 * @param name the name to set
-	 */
 	public void setName(String name) {
 		this.name = name;
 	}
-
 }

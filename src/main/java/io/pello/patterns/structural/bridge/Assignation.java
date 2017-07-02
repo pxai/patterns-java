@@ -3,7 +3,6 @@ package io.pello.patterns.structural.bridge;
  * Assignation interface is part of the bridge to
  * implementation
  * @author Pello Xabier Altadill Izura
- *
  */
 public interface Assignation {
 	public static final int TOTAL_VALUES = 3;
