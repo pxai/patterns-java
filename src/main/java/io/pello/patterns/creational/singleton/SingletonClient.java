@@ -1,12 +1,9 @@
-/**
- * 
- */
+
 package io.pello.patterns.creational.singleton;
 
 /**
  * A client using the die
  * @author Pello Xabier Altadill Izura
- *
  */
 public class SingletonClient {
 	
