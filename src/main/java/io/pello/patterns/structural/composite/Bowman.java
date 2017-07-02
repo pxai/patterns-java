@@ -1,6 +1,6 @@
 package io.pello.patterns.structural.composite;
 
-import java.util.Vector;
+import java.util.ArrayList;
 import io.pello.patterns.creational.singleton.Die;
 
 /**
@@ -21,34 +21,25 @@ public class Bowman implements WarUnitComponent {
 		// we leave this blank.
 	}
 
-	/**
-	 * dels a warunit
-	 */
+
 	public void del(WarUnitComponent unit) {
-		// same ass add method
+		// same as add method
 	}
 
-	/**
-	 * attacks
-	 */
+
 	public int attack() {
 		return Die.getInstance().roll() + BOWMAN_MODIFIER;
 	}
 
-	/**
-	 * defends
-	 */
+
 	public int defend() {
-		// TODO Auto-generated method stub
 		return Die.getInstance().roll() + (BOWMAN_MODIFIER-1);
 	}
 
 	/**
 	 * if it's a composite, it holds more components.
 	 */
-	public Vector<WarUnitComponent> getChild() {
-		// TODO Auto-generated method stub
+	public ArrayList<WarUnitComponent> getChild() {
 		return null;
 	}
-
 }

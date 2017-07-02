@@ -1,6 +1,6 @@
 package io.pello.patterns.structural.composite;
 
-import java.util.Vector;
+import java.util.ArrayList;
 
 /**
  * Interface for the War Unit Component.
@@ -14,5 +14,5 @@ public interface WarUnitComponent {
 	public void del (WarUnitComponent unit);
 	public int attack();
 	public int defend();
-	public Vector<WarUnitComponent> getChild();
+	public ArrayList<WarUnitComponent> getChild();
 }

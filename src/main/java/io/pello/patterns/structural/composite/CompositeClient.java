@@ -6,9 +6,6 @@ package io.pello.patterns.structural.composite;
  * @greetz any
  */
 public class CompositeClient {
-	/**
-	 * method to use composite pattern
-	 */
 	public void useComposite () {
 		Knight knight1 = new Knight();
 		Knight knight2 = new Knight();
