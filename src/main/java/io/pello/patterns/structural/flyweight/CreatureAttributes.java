@@ -20,50 +20,36 @@ public class CreatureAttributes {
 		this.damage = damage;
 		this.defense = defense;
 	}
-	/**
-	 * @return the name
-	 */
+	
+	// getters/setters...
+
 	public int getSpeed() {
 		return speed;
 	}
-	/**
-	 * @param name the name to set
-	 */
+
 	public void setName(int speed) {
 		this.speed = speed;
 	}
-	/**
-	 * @return the damage
-	 */
+
 	public int getDamage() {
 		return damage;
 	}
-	/**
-	 * @param damage the damage to set
-	 */
+
 	public void setDamage(int damage) {
 		this.damage = damage;
 	}
-	/**
-	 * @return the defense
-	 */
+
 	public int getDefense() {
 		return defense;
 	}
-	/**
-	 * @param defense the defense to set
-	 */
+
 	public void setDefense(int defense) {
 		this.defense = defense;
 	}
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
+
 	@Override
 	public String toString() {
 		return "CreatureAttributes [speed=" + speed + ", damage=" + damage
 				+ ", defense=" + defense + "]";
 	}
-	
-	
 }
