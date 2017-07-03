@@ -11,18 +11,12 @@ public class Unit {
 	private int intelligence;
 	private PointsGenerator pointsGenerator;
 	
-	/**
-	 * constructor
-	 * @param pointsGenerator
-	 */
 	public Unit (PointsGenerator pointsGenerator) {
 		this.pointsGenerator = pointsGenerator;
 		init();
 	}
 	
-	/**
-	 * this method makes use of the strategy
-	 */
+	 // this method makes use of the strategy
 	private void init() {
 		int [] values = pointsGenerator.generate();
 		strength = values[0];
@@ -30,13 +24,9 @@ public class Unit {
 		intelligence = values[2];
 	}
 
-	/* (non-Javadoc)
-	 * @see java.lang.Object#toString()
-	 */
 	@Override
 	public String toString() {
 		return "Unit [strength=" + strength + ", speed=" + speed
 				+ ", intelligence=" + intelligence + "]";
 	}
-
 }

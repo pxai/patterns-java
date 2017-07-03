@@ -1,7 +1,6 @@
 package io.pello.patterns.behavioral.strategy;
 
 public class RandomPointsGenerator implements PointsGenerator {
-
 	@Override
 	public int[] generate() {
 		int [] values = new int[3];
@@ -10,5 +9,4 @@ public class RandomPointsGenerator implements PointsGenerator {
 		}
 		return values;
 	}
-
 }
