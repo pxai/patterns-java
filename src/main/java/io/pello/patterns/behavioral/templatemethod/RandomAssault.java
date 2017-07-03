@@ -10,11 +10,6 @@ import io.pello.patterns.behavioral.command.Army;
  */
 public class RandomAssault extends Assault {
 
-	/**
-	 * constructor with two armies
-	 * @param army1
-	 * @param army2
-	 */
 	public RandomAssault(Army army1, Army army2) {
 		super(army1, army2);
 	}
@@ -31,7 +26,6 @@ public class RandomAssault extends Assault {
 
 	@Override
 	public void defend(Army army, int attack) {
-		// TODO Auto-generated method stub
 		army.setTotalLife(army.getTotalLife() - (attack - army.defend()));
 	}
 
@@ -44,5 +38,4 @@ public class RandomAssault extends Assault {
 	public String outcome(Army army1, Army army2) {
 		return "1:" + army1.toString() + " 2:" + army2.toString();
 	}
-	
 }

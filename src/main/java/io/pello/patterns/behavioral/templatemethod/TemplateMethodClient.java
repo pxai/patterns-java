@@ -12,7 +12,6 @@ public class TemplateMethodClient {
 		Army armyOfGood = new Army();
 		Army armyOfEvil = new Army();
 		
-		Assault assault = new RandomAssault(armyOfGood, armyOfEvil);
-		
+		Assault assault = new RandomAssault(armyOfGood, armyOfEvil);	
 	}
 }
