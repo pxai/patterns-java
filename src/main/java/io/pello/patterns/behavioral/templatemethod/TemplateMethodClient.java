@@ -13,5 +13,6 @@ public class TemplateMethodClient {
 		Army armyOfEvil = new Army();
 		
 		Assault assault = new RandomAssault(armyOfGood, armyOfEvil);	
+		assault.assault();
 	}
 }

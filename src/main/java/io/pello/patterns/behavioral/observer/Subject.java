@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * @greetz any
  */
 public abstract class Subject {
-	private ArrayList<Observer> observers;
+	private ArrayList<Observer> observers = new ArrayList<Observer>();
 	
 	public abstract String getState();
 	

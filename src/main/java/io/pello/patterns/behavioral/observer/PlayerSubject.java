@@ -20,6 +20,6 @@ public class PlayerSubject extends Subject {
 	 */
 	public void setState (String state) {
 		playerState = state;
-		notify();
+		notifyObservers();
 	}
 }

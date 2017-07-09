@@ -20,10 +20,11 @@ public class IteratorClient {
 		squads.append("Squad3",squad3);
 		
 		Iterator<Squad> iterator = squads.createIterator();
-		while (!iterator.isDone()) {
+		while (iterator.isDone()) {
+			iterator.next();
 			Squad squad = iterator.currentItem();
 			System.out.println("Squad data: "+ squad.toString());
-			iterator.next();
+
 		}
 	}
 }

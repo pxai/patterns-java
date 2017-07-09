@@ -31,10 +31,11 @@ public class CommandClient {
 								break;
 				case "exit":
 								System.out.println("Hasta la vista");
+								break;
 				default:		System.out.println("unknown command");
 								break;
 				
 			}
-		} while (option != "exit");
+		} while (!option.equals("exit"));
 	}
 }

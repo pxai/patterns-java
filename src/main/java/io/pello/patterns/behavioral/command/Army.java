@@ -30,4 +30,11 @@ public class Army {
 	public void setTotalLife(int totalLife) {
 		this.totalLife = totalLife;
 	}
+
+	@Override
+	public String toString() {
+		return "Army [totalLife=" + totalLife + "]";
+	}
+	
+	
 }

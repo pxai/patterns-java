@@ -17,22 +17,22 @@ public class HashIterator<S,T> implements Iterator<T> {
 	public HashIterator (Hashtable<S,T> items) {
 		this.items = items;
 		keys = items.keys();
-		current = keys.nextElement();
 	}
 	
 	@Override
 	public void first() {
-		current = items.keys().nextElement();
+		keys = items.keys();
+		current = keys.nextElement();
 	}
 
 	@Override
 	public void next() {
-		current = items.keys().nextElement();
+		current = keys.nextElement();
 	}
 
 	@Override
 	public boolean isDone() {
-		return items.keys().hasMoreElements();
+		return keys.hasMoreElements();
 	}
 
 	@Override

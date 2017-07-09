@@ -17,7 +17,7 @@ public class MediatorClient {
  		army.add(new Soldier("u2","soldier",mediator));
  		army.add(new Soldier("u3","soldier",mediator));
  		
- 		Unit general = new General("General", "general", mediator);
+ 		General general = new General("General", "general", mediator);
  		
  		general.attack();
 	}
