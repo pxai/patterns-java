@@ -19,4 +19,10 @@ public class BuilderClient {
 
 		return heroBuilder.getHero();
 	}
+	
+	public static void main (String args[]) {
+		BuilderClient client = new BuilderClient();
+		
+		System.out.println(client.createHero());
+	}
 }

@@ -10,7 +10,8 @@ import java.util.ArrayList;
  * @author Pello Xabier Altadill Izura
  */
 public class PrototypeClient {
-	public void createPrototypes () {
+
+	public static void main (String args[]) {
 		ArrayList<BeastPrototype> beasts = new ArrayList<BeastPrototype>();
 		BeastPrototypeFactory beastFactory =
 				new BeastPrototypeFactory();
@@ -22,7 +23,7 @@ public class PrototypeClient {
 		}
 		
 		for (BeastPrototype beast : beasts) {
-			System.out.println();
+			System.out.println(beast);
 		}
 	}
 }

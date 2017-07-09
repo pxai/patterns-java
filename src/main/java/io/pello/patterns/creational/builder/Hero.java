@@ -50,4 +50,11 @@ public class Hero {
 		this.spell = spell;
 	}
 
+	@Override
+	public String toString() {
+		return "Hero [name=" + name + ", race=" + race + ", armor=" + armor + ", weapon=" + weapon + ", spell=" + spell
+				+ "]";
+	}
+
+	
 }
