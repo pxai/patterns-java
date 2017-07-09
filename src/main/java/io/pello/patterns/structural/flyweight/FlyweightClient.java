@@ -10,12 +10,13 @@ import java.util.ArrayList;
 public class FlyweightClient {
 	private static final int HUGE_NUMBER_OF_CREATURES = 3000;
 
-	public static void main (String args) {
+	public static void main (String args[]) {
 		ArrayList<Creature> creatures = new ArrayList<Creature>();
 		for (int i = 0;i < HUGE_NUMBER_OF_CREATURES; i++) {
 			creatures.add(new Creature("bat"));
 			creatures.add(new Creature("snake"));
 			creatures.add(new Creature("rat"));
 		}
+		System.out.println(creatures);
 	}
 }

@@ -7,7 +7,7 @@ package io.pello.patterns.structural.decorator;
  *
  */
 public class DecoratorClient {
-	public void useCharacters () {
+	public static void main (String args[]) {
 		Character hordeCharacter= new Orc(new SimpleCharacter("Thrall"));
 		System.out.println(hordeCharacter.toString());
 	}

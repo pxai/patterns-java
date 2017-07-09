@@ -21,4 +21,11 @@ public class Creature {
 	public CreatureAttributes getAttributes () {
 		return CreatureCache.getInstance().getCreatureAttributes(name);
 	}
+
+	@Override
+	public String toString() {
+		return "Creature [name=" + name + ", getAttributes()=" + getAttributes() + "]";
+	}
+	
+	
 }

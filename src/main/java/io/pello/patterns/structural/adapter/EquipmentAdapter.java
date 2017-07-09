@@ -3,7 +3,8 @@ package io.pello.patterns.structural.adapter;
 /**
  * Adapter or wrapper for equipment class
  * 
- * @author Pello Xabier Altadill Izura On one hand it implements Inventory on
+ * @author Pello Xabier Altadill Izura 
+ * On one hand it implements Inventory on
  *         the other hand it extends equipment so it can be used by our client.
  *         Coulb be done by composition of Equipment, that is Equipment as an
  *         attribute

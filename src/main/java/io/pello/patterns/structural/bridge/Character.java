@@ -40,4 +40,12 @@ public abstract class Character {
 	public void setIntelligence(int intelligence) {
 		this.intelligence = intelligence;
 	}
+
+	@Override
+	public String toString() {
+		return "Character [assignationMethod=" + assignationMethod + ", strength=" + strength + ", speed=" + speed
+				+ ", intelligence=" + intelligence + "]";
+	}
+	
+	
 }
