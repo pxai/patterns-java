@@ -10,8 +10,9 @@ public class Unit {
 	private int speed;
 	private int intelligence;
 	private PointsGenerator pointsGenerator;
+	private AttackStrategy attackStrategy;
 	
-	public Unit (PointsGenerator pointsGenerator) {
+	public Unit (PointsGenerator pointsGenerator, AttackStrategy attackStrategy) {
 		this.pointsGenerator = pointsGenerator;
 		init();
 	}
@@ -23,10 +24,28 @@ public class Unit {
 		speed = values[1];
 		intelligence = values[2];
 	}
+	
+	public int attack () {
+		return attackStrategy.attack(this);
+	}
+
+	public int getStrength() {
+		return strength;
+	}
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public int getIntelligence() {
+		return intelligence;
+	}
 
 	@Override
 	public String toString() {
 		return "Unit [strength=" + strength + ", speed=" + speed
 				+ ", intelligence=" + intelligence + "]";
 	}
+	
+	
 }

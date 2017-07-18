@@ -7,8 +7,8 @@ package io.pello.patterns.behavioral.strategy;
  */
 public class StrategyClient {
 	public static void main (String args[]) {
-		Unit randomUnit = new Unit(new RandomPointsGenerator());
-		Unit fixedUnit = new Unit(new FixedPointsGenerator());
+		Unit randomUnit = new Unit(new RandomPointsGenerator(), new FastAttackStrategy());
+		Unit fixedUnit = new Unit(new FixedPointsGenerator(), new StrongAttackStrategy());
 		
 		System.out.println(randomUnit);
 		System.out.println(fixedUnit);
