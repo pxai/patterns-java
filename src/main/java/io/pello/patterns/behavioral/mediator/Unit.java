@@ -9,8 +9,8 @@ import io.pello.patterns.creational.singleton.Die;
 public abstract class Unit {
 	protected String name;
 	protected String range;
-	private int x;
-	private int y;
+	protected int x;
+	protected int y;
 	protected Mediator mediator;
 	
 

@@ -13,7 +13,7 @@ public class BuilderClient {
 	public Hero createHero() {
 		HeroBuilder heroBuilder = new HumanHeroBuilder();
 		Director director = new Director();
-
+		
 		// here we pass our builder, and an extra parameter.
 		director.createHero(heroBuilder);
 

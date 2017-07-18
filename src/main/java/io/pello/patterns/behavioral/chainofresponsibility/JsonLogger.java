@@ -14,6 +14,6 @@ public class JsonLogger extends Logger {
 	@Override
 	protected void logMessage(LogMessage logMessage) {
 		// Do JSONparsing stuff...
-		System.out.println(logMessage.getMsg());
+		System.out.println("Json Log: " + logMessage.getMsg());
 	}
 }

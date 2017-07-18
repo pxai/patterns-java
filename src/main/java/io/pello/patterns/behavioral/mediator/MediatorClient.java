@@ -16,9 +16,10 @@ public class MediatorClient {
  		army.add(new Soldier("u1","soldier",mediator));
  		army.add(new Soldier("u2","soldier",mediator));
  		army.add(new Soldier("u3","soldier",mediator));
- 		
+ 				
  		General general = new General("General", "general", mediator);
  		
- 		general.attack();
+ 		general.giveOrder(new Command("Attack"), army.firstElement());
+ 		general.move(5, 7, army.firstElement());
 	}
 }

@@ -11,6 +11,7 @@ public class ScoresProxy implements Scores {
 	private static Scores realScores;
 
 	public ScoresProxy () {
+		checkInstance();
 	}
 	
 	private void checkInstance () {

@@ -13,6 +13,6 @@ public class StringLogger extends Logger {
 
 	@Override
 	protected void logMessage(LogMessage logMessage) {
-		System.out.println(logMessage.getMsg());
+		System.out.println("String Log: " + logMessage.getMsg());
 	}
 }

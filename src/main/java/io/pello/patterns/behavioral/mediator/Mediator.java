@@ -8,7 +8,7 @@ package io.pello.patterns.behavioral.mediator;
  */
 public interface Mediator {
 	public void order (Command command, Unit unit);
-	public void move (int x, int y);
-	public int attack (int x, int y);
-	public void hold ();
+	public void move (int x, int y, Unit unit);
+	public int attack (int x, int y, Unit unit);
+	public void hold (Unit unit);
 }

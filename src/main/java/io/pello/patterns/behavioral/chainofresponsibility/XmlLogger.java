@@ -14,6 +14,6 @@ public class XmlLogger extends Logger {
 	@Override
 	protected void logMessage(LogMessage logMessage) {
 		// Do parsing stuff...
-		System.out.println(logMessage.getMsg());
+		System.out.println("XML Log: " + logMessage.getMsg());
 	}
 }
