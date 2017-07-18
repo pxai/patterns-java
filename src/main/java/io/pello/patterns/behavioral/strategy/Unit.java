@@ -14,6 +14,7 @@ public class Unit {
 	
 	public Unit (PointsGenerator pointsGenerator, AttackStrategy attackStrategy) {
 		this.pointsGenerator = pointsGenerator;
+		this.attackStrategy = attackStrategy;
 		init();
 	}
 	
