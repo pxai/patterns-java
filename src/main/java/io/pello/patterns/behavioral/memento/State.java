@@ -36,4 +36,11 @@ public class State {
 	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
 	}
+
+	@Override
+	public String toString() {
+		return "State [life=" + life + ", range=" + range + ", weapon=" + weapon + "]";
+	}
+	
+	
 }
