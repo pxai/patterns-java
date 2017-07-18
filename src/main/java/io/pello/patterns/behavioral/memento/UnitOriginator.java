@@ -1,6 +1,6 @@
 package io.pello.patterns.behavioral.memento;
 
-import io.pello.patterns.creational.abstractfactory.HumanWeapon;
+import io.pello.patterns.creational.abstractfactory.Weapon;
 
 /**
  * Represents a unit of an army
@@ -11,21 +11,16 @@ public class UnitOriginator {
 	private String name;
 	private int life;
 	private String range;
-	private HumanWeapon weapon;
+	private Weapon weapon;
 	private State state;
 	
-	public UnitOriginator(String name, int life, String range, HumanWeapon weapon) {
+	public UnitOriginator(String name, int life, String range, Weapon weapon) {
 		this.name = name;
 		this.life = life;
 		this.range = range;
 		this.weapon = weapon;
 	}
 
-
-	public void setUnitMemento (UnitMemento unitMemento) {
-		this.state = unitMemento.getState();
-	}
-	
 	public UnitMemento createMemento () {
 		State state = new State();
 		
@@ -37,6 +32,15 @@ public class UnitOriginator {
 		memento.saveState(state);
 		
 		return memento;
+	}
+	
+
+	public void setUnitMemento (UnitMemento unitMemento) {
+		this.state = unitMemento.getState();
+
+		life = state.getLife();
+		range = state.getRange();
+		weapon = state.getWeapon();
 	}
 	
 	// getters/setters...
@@ -65,17 +69,18 @@ public class UnitOriginator {
 		this.range = range;
 	}
 
-	public HumanWeapon getWeapon() {
+	public Weapon getWeapon() {
 		return weapon;
 	}
 
-	public void setWeapon(HumanWeapon weapon) {
+	public void setWeapon(Weapon weapon) {
 		this.weapon = weapon;
 	}
 
 	@Override
 	public String toString() {
-		return "UnitOriginator [name=" + name + ", life=" + life + ", weapon="
-				+ weapon + "]";
+		return "UnitOriginator [name=" + name + ", life=" + life + ", range=" + range + ", weapon=" + weapon + "]";
 	}
+
+
 }
