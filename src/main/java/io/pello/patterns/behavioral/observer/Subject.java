@@ -25,6 +25,7 @@ public abstract class Subject {
 	public void notifyObservers () {
 		for (Observer observer : observers) {
 			observer.update();
+			System.out.println(observer.observerState);
 		}
 	}
 }

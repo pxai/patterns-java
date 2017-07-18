@@ -18,13 +18,9 @@ public class ObserverClient {
 		player.attach(xmlObserver);
 		player.attach(jsonObserver);
 
-		System.out.println("Before change: " + stringObserver.getObserverState());	
+		player.setState("I am alive");
+		player.setState("I am dead");
+		player.setState("Hola");
 		
-		player.setState("Player data changed");
-		System.out.println("After change: " + stringObserver.getObserverState());
-		
-		xmlObserver.setObserverState("Changed from xml observer");
-		System.out.println("After 2nd change: " + stringObserver.getObserverState());
-
 	}
 }
