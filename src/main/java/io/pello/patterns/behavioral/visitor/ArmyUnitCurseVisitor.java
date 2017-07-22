@@ -4,13 +4,13 @@ public class ArmyUnitCurseVisitor implements ArmyUnitVisitor {
 
 	public void spell(Bowman bowman) {
 		System.out.println("Bowman was cursed with arrow loss");
-		bowman.setArrows(1000);
+		bowman.setArrows(0);
 	}
 
 	@Override
 	public void spell(Knight knight) {
 		System.out.println("Knight was cursed with a slow horse");
-		knight.setHorseSpeed(500);
+		knight.setHorseSpeed(-10);
 	}
 
 	@Override
